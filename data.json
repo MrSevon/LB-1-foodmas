@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "category": "sweet",
+        "image": "/static/img/sweet1.jpg",
+        "price": 2500
+    },
+    {
+        "id": "2",
+        "category": "fruit",
+        "image": "/static/img/fruit2.jpg",
+        "price": 3000
+    },
+    {
+        "id": "3",
+        "category": "male",
+        "image": "/static/img/male3.jpg",
+        "price": 2200
+    },
+    {
+        "id": "4",
+        "category": "boxes",
+        "image": "/static/img/box4.jpg",
+        "price": 4500
+    },
+    {
+        "id": "5",
+        "category": "nut",
+        "image": "/static/img/nut5.jpg",
+        "price": 3500
+    },
+    {
+        "id": "6",
+        "category": "chocolate",
+        "image": "/static/img/chocolate6.jpg",
+        "price": 2800
+    }
+]

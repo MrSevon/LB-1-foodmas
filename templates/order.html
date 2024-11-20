@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="order-form-container">
+    <h2 class="form-title">Оформить заказ</h2>
+    <p>Пожалуйста, заполните форму ниже, чтобы заказать ваш букет.</p>
+    <form action="/submit-order" method="post" class="order-form">
+        <div class="form-group">
+            <label for="bouquet_id">ID букета:</label>
+            <input type="text" id="bouquet_id" name="bouquet_id" required>
+        </div>
+        <div class="form-group">
+            <label for="customer_name">Ваше имя:</label>
+            <input type="text" id="customer_name" name="customer_name" required>
+        </div>
+        <div class="form-group">
+            <label for="customer_phone">Номер телефона:</label>
+            <input type="tel" id="customer_phone" name="customer_phone" required pattern="[0-9]{11}">
+        </div>
+        <div class="form-group">
+            <label for="customer_address">Адрес доставки:</label>
+            <input type="text" id="customer_address" name="customer_address" required>
+        </div>
+        <div class="form-group">
+            <label for="order_notes">Пожелания к заказу:</label>
+            <textarea id="order_notes" name="order_notes" rows="4"></textarea>
+        </div>
+        <button type="submit" class="submit-button">Заказать</button>
+    </form>
+</div>
+{% endblock %}

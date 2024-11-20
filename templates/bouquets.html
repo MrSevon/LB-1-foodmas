@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="bouquets-container">
+    <h2>Наши букеты</h2>
+    <div class="bouquets-grid">
+        {% for bouquet in bouquets %}
+        <div class="bouquet-card">
+            <img src="{{ bouquet.image }}" alt="Букет {{ bouquet.id }}">
+            <div class="card-body">
+                <h5 class="card-title">Букет №{{ bouquet.id }}</h5>
+                <p class="card-text">{{ bouquet.price }} руб.</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
