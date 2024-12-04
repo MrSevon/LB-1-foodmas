@@ -1,11 +1,16 @@
 from http.server import HTTPServer, SimpleHTTPRequestHandler
-from jinja2 import FileSystemLoader
+from jinja2 import FileSystemLoader, Environment
 import json
 from urllib.parse import parse_qs
 
 class MyHandler(SimpleHTTPRequestHandler):
+    
+    
+    env = Environment(
+        loader=FileSystemLoader('templates')
+    )
 
-    loader=FileSystemLoader('templates')
+    
     
 
     def do_GET(self):
